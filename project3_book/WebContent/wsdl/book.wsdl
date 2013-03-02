@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="BookService" targetNamespace="http://bean.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://bean.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://bean.com/" schemaLocation="book_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="setPrivileges">
+    <wsdl:part name="parameters" element="tns:setPrivileges">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTitle">
+    <wsdl:part name="parameters" element="tns:getTitle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isUserInRoleResponse">
+    <wsdl:part name="parameters" element="tns:isUserInRoleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setISBNResponse">
+    <wsdl:part name="parameters" element="tns:setISBNResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAuthor">
+    <wsdl:part name="parameters" element="tns:setAuthor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setTitle">
+    <wsdl:part name="parameters" element="tns:setTitle">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setPrivilegesResponse">
+    <wsdl:part name="parameters" element="tns:setPrivilegesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getISBN">
+    <wsdl:part name="parameters" element="tns:getISBN">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPrivileges">
+    <wsdl:part name="parameters" element="tns:getPrivileges">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isUserInRole">
+    <wsdl:part name="parameters" element="tns:isUserInRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAuthor">
+    <wsdl:part name="parameters" element="tns:getAuthor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getISBNResponse">
+    <wsdl:part name="parameters" element="tns:getISBNResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAuthorResponse">
+    <wsdl:part name="parameters" element="tns:setAuthorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPrivilegesResponse">
+    <wsdl:part name="parameters" element="tns:getPrivilegesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setGid">
+    <wsdl:part name="parameters" element="tns:setGid">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTitleResponse">
+    <wsdl:part name="parameters" element="tns:getTitleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setGidResponse">
+    <wsdl:part name="parameters" element="tns:setGidResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAuthorResponse">
+    <wsdl:part name="parameters" element="tns:getAuthorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setISBN">
+    <wsdl:part name="parameters" element="tns:setISBN">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGid">
+    <wsdl:part name="parameters" element="tns:getGid">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGidResponse">
+    <wsdl:part name="parameters" element="tns:getGidResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setTitleResponse">
+    <wsdl:part name="parameters" element="tns:setTitleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Book">
+    <wsdl:operation name="getGid">
+      <wsdl:input name="getGid" message="tns:getGid">
+    </wsdl:input>
+      <wsdl:output name="getGidResponse" message="tns:getGidResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAuthor">
+      <wsdl:input name="setAuthor" message="tns:setAuthor">
+    </wsdl:input>
+      <wsdl:output name="setAuthorResponse" message="tns:setAuthorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getISBN">
+      <wsdl:input name="getISBN" message="tns:getISBN">
+    </wsdl:input>
+      <wsdl:output name="getISBNResponse" message="tns:getISBNResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTitle">
+      <wsdl:input name="getTitle" message="tns:getTitle">
+    </wsdl:input>
+      <wsdl:output name="getTitleResponse" message="tns:getTitleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setPrivileges">
+      <wsdl:input name="setPrivileges" message="tns:setPrivileges">
+    </wsdl:input>
+      <wsdl:output name="setPrivilegesResponse" message="tns:setPrivilegesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGid">
+      <wsdl:input name="setGid" message="tns:setGid">
+    </wsdl:input>
+      <wsdl:output name="setGidResponse" message="tns:setGidResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPrivileges">
+      <wsdl:input name="getPrivileges" message="tns:getPrivileges">
+    </wsdl:input>
+      <wsdl:output name="getPrivilegesResponse" message="tns:getPrivilegesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setTitle">
+      <wsdl:input name="setTitle" message="tns:setTitle">
+    </wsdl:input>
+      <wsdl:output name="setTitleResponse" message="tns:setTitleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAuthor">
+      <wsdl:input name="getAuthor" message="tns:getAuthor">
+    </wsdl:input>
+      <wsdl:output name="getAuthorResponse" message="tns:getAuthorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setISBN">
+      <wsdl:input name="setISBN" message="tns:setISBN">
+    </wsdl:input>
+      <wsdl:output name="setISBNResponse" message="tns:setISBNResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserInRole">
+      <wsdl:input name="isUserInRole" message="tns:isUserInRole">
+    </wsdl:input>
+      <wsdl:output name="isUserInRoleResponse" message="tns:isUserInRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BookServiceSoapBinding" type="tns:Book">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getGid">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getGid">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGidResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAuthor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setAuthor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setAuthorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getISBN">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getISBN">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getISBNResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTitle">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTitle">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTitleResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setPrivileges">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setPrivileges">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setPrivilegesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGid">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setGid">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setGidResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPrivileges">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getPrivileges">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPrivilegesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAuthor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAuthor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAuthorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setTitle">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setTitle">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setTitleResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setISBN">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setISBN">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setISBNResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isUserInRole">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="isUserInRole">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isUserInRoleResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BookService">
+    <wsdl:port name="BookPort" binding="tns:BookServiceSoapBinding">
+      <soap:address location="http://localhost:8080/project3_book/services/BookPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://bean.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://bean.com/" version="1.0">
+<xs:element name="getAuthor" type="tns:getAuthor"/>
+<xs:element name="getAuthorResponse" type="tns:getAuthorResponse"/>
+<xs:element name="getGid" type="tns:getGid"/>
+<xs:element name="getGidResponse" type="tns:getGidResponse"/>
+<xs:element name="getISBN" type="tns:getISBN"/>
+<xs:element name="getISBNResponse" type="tns:getISBNResponse"/>
+<xs:element name="getPrivileges" type="tns:getPrivileges"/>
+<xs:element name="getPrivilegesResponse" type="tns:getPrivilegesResponse"/>
+<xs:element name="getTitle" type="tns:getTitle"/>
+<xs:element name="getTitleResponse" type="tns:getTitleResponse"/>
+<xs:element name="isUserInRole" type="tns:isUserInRole"/>
+<xs:element name="isUserInRoleResponse" type="tns:isUserInRoleResponse"/>
+<xs:element name="setAuthor" type="tns:setAuthor"/>
+<xs:element name="setAuthorResponse" type="tns:setAuthorResponse"/>
+<xs:element name="setGid" type="tns:setGid"/>
+<xs:element name="setGidResponse" type="tns:setGidResponse"/>
+<xs:element name="setISBN" type="tns:setISBN"/>
+<xs:element name="setISBNResponse" type="tns:setISBNResponse"/>
+<xs:element name="setPrivileges" type="tns:setPrivileges"/>
+<xs:element name="setPrivilegesResponse" type="tns:setPrivilegesResponse"/>
+<xs:element name="setTitle" type="tns:setTitle"/>
+<xs:element name="setTitleResponse" type="tns:setTitleResponse"/>
+<xs:complexType name="getGid">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getGidResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setAuthor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setAuthorResponse">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getISBN">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getISBNResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getTitle">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getTitleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setPrivileges">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setPrivilegesResponse">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="setGid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setGidResponse">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getPrivileges">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getPrivilegesResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setTitle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setTitleResponse">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getAuthor">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getAuthorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setISBN">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="setISBNResponse">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="isUserInRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="isUserInRoleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
