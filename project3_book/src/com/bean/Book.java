@@ -13,6 +13,7 @@ public class Book implements Serializable {
 	private String author;
 	private String title;
 	private String ISBN; 
+	private double price; 
 	private Set<String> privileges;
 	
 	public Book() {} 
@@ -23,6 +24,14 @@ public class Book implements Serializable {
 	
 	public void setPrivileges(Set<String> privileges) {
 		this.privileges = privileges;
+	}
+	
+	public void setPrice(double price){
+		this.price = price; 
+	}
+	
+	public double getPrice(){
+		return price; 
 	}
 	
 	public String getAuthor() {
